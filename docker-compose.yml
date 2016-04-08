@@ -1,0 +1,19 @@
+version: "2"
+
+networks:
+  default:
+    external:
+      name: bridge
+
+services:
+  web:
+    # image: django:1.9
+    build: .
+    ports:
+      - "23232:80"
+    volumes:
+      - ".:/app"
+    environment:
+      VIRTUAL_HOST: 'tldl.aldryn.me'
+      DATABASE_URL: sqlite:///db.sqlite3
+      SECRET_KEY: notsosecret

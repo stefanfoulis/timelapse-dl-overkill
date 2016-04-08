@@ -1,0 +1,5 @@
+Django<1.10a1.dev1
+dj-database-url
+django-channels
+yurl
+requests
