@@ -5,6 +5,7 @@ import uuid
 
 from django.db import models
 from yurl import URL
+import requests
 
 
 class UUIDAuditedModel(models.Model):
